@@ -5,21 +5,23 @@ layout: layouts/base.njk
 ---
 {% include "header.njk" %}
 
-<main class="hidden">
-  <div>
-    <div>
-      <h1>Make remote work</h1>
-      <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-      <a href="/">Learn more</a>
+<main class="grid grid-cols-1 lg:grid-cols-2 lg:gap-16 lg:px-16 lg:mt-16 xl:gap-20 xl:px-32">
+
+  <div class="lg:flex lg:flex-col">
+    <div class="text-center px-4 lg:text-left lg:flex-1 lg:flex lg:flex-col lg:justify-center">
+      <h1 class="text-[32px] font-bold mt-16 mb-4 text-dark-gray lg:text-7xl lg:mb-16 xl:text-8xl">Make remote work</h1>
+      <p class="text-medium-gray lg:text-lg lg:max-w-md">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+      <a class="bg-dark-gray rounded-2xl px-8 py-4 inline-flex text-white mt-8 border duration-300 hover:bg-white hover:text-dark-gray hover:border-dark-gray lg:self-start lg:mt-16" href="/">Learn more</a>
     </div>
-    <div>
+    <div class="grid grid-cols-4 items-center gap-8 px-4 mt-12">
       <img src="./img/client-databiz.svg" alt="">
       <img src="./img/client-audiophile.svg" alt="">
       <img src="./img/client-meet.svg" alt="">
       <img src="./img/client-maker.svg" alt="">
     </div>
   </div>
-  <div>
+
+  <div class="order-first lg:order-last">
     <picture>
       <source srcset="./img/image-hero-desktop.png"  media="(min-width: 800px)">
       <source srcset="./img/image-hero-mobile.png" media="(min-width: 400px)">
