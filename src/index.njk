@@ -3,6 +3,27 @@ title: YATAS
 description: Yet Another Tailwind Alpine Starter Project for 11ty!
 layout: layouts/base.njk
 ---
-<div class="flex items-center justify-center w-full min-h-screen" x-init="console.log('Hello from Alpine.js')">
-  <img src="img/logo.svg" class="w-1/3 h-auto max-w-full" width="220" height="150" alt="YATAS Logo" />
-</div>
+{% include "header.njk" %}
+
+<main class="hidden">
+  <div>
+    <div>
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+      <a href="/">Learn more</a>
+    </div>
+    <div>
+      <img src="./img/client-databiz.svg" alt="">
+      <img src="./img/client-audiophile.svg" alt="">
+      <img src="./img/client-meet.svg" alt="">
+      <img src="./img/client-maker.svg" alt="">
+    </div>
+  </div>
+  <div>
+    <picture>
+      <source srcset="./img/image-hero-desktop.png"  media="(min-width: 800px)">
+      <source srcset="./img/image-hero-mobile.png" media="(min-width: 400px)">
+      <img src="./img/image-hero-desktop.png"/>
+    </picture>
+  </div>
+</main>

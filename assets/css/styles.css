@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body.has-overlay::after {
+    @apply bg-red-500 absolute inset-0;
+  }
+}
